@@ -16,9 +16,9 @@ router.post("/register", async (req, res) => {
 
         let newuser = new users(data);
 
-        await newuser.save();
+        let result=await newuser.save();
 
-        res.send("Employee registered successfully");
+        res.send(result);
 
     } catch (err) {
 

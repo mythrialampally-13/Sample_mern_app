@@ -11,6 +11,9 @@ import Register from "./pages/Register.jsx";
 
 import UserHome from "./pages/UserHome.jsx";
 import Contact_page from "./pages/Contact_page.jsx";
+import HrHome from "./pages/HrHome.jsx";
+import AdminHome from "./pages/AdminHome.jsx";
+import EmpHome from "./pages/EmpHome.jsx";
 
 
 import { Routes, Route } from 'react-router-dom';
@@ -20,12 +23,15 @@ function App() {
         <div>
             <Header_component></Header_component>
             <Routes>
-                <Route path="/home" element={<Home></Home>}></Route>
+                <Route path="/home" element={<home></home>}></Route>
                 <Route path="/login" element={<Login></Login>}></Route>
                 <Route path="/userhome" element={<UserHome></UserHome>}></Route>
                 <Route path="/about" element={<About_page></About_page>}></Route>
                 <Route path="/contact" element={<Contact_page></Contact_page>}></Route>
                 <Route path="/register" element={<Register/>}></Route>
+                <Route path="/hrHome" element={<HrHome/>}></Route>
+                <Route path="/emphome" element={<EmpHome/>}></Route>
+                <Route path="/adminhome" element={<AdminHome/>}></Route>
             </Routes>
             <Footer_component></Footer_component>
         </div>

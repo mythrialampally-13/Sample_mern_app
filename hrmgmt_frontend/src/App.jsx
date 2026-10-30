@@ -4,7 +4,7 @@ import Footer_component from "./components/Footer_component.jsx";
 
 import About_page from "./pages/About_page.jsx";
 
-import Home from "./pages/home.jsx";
+import Home_page from "./pages/Home_page.jsx";
 
 import Login from "./pages/Login.jsx";
 import Register from "./pages/Register.jsx";
@@ -23,7 +23,7 @@ function App() {
         <div>
             <Header_component></Header_component>
             <Routes>
-                <Route path="/home" element={<home></home>}></Route>
+                <Route path="/home" element={<Home_page></Home_page>}></Route>
                 <Route path="/login" element={<Login></Login>}></Route>
                 <Route path="/userhome" element={<UserHome></UserHome>}></Route>
                 <Route path="/about" element={<About_page></About_page>}></Route>
